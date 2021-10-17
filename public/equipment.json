@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "3 layers Safety Mask",
+        "description": "We ensure high safety equipments to you",
+        "price": 100,
+        "img": "https://i.ibb.co/cxL05Wb/mask.jpg"
+    },
+    {
+        "id": 2,
+        "title": "1 Litre Drinking Water",
+        "description": "We ensure high safety equipments to you",
+        "price": 100,
+        "img": "https://i.ibb.co/5kCh484/Girl-reaches-her-hand-out-to-take-a-bottle-of-water-from-man-s-hand.jpg"
+    },
+    {
+        "id": 3,
+        "title": "First Aid Kit",
+        "description": "We ensure high safety equipments to you",
+        "price": 100,
+        "img": "https://i.ibb.co/JByZkNK/kit.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Emergency Bandage",
+        "description": "We ensure high safety equipments to you",
+        "price": 100,
+        "img": "https://i.ibb.co/H41yqfb/bandage.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Vaccine for COVID-19",
+        "description": "We ensure high safety equipments to you",
+        "price": 100,
+        "img": "https://i.ibb.co/7GYr9pN/COVID-19-vaccine-injection-glass-bottle-with-syringe.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Hand Sanitizer",
+        "description": "We ensure high safety equipments to you",
+        "price": 100,
+        "img": "https://i.ibb.co/7tcyshd/Hands-at-the-gel-bottle-to-wash-hands-and-squeeze-for-others-to-wash-hands.jpg"
+    }
+]
