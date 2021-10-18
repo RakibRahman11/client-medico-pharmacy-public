@@ -4,7 +4,8 @@ import login from '../../Images/login.png'
 import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
-    const {user } = useAuth()
+    const { user, logout } = useAuth()
+
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -24,11 +25,16 @@ const Navbar = () => {
                                 <a className="nav-link active" href="/">Contact</a>
                             </li>
                         </ul>
-                        <img src={user.photoURL} alt="" />
+                        <img className='rounded-circle me-2' src={user.photoURL} alt="" />
+                        {user.displayName}
                         <form className="d-flex">
-                            <a className="navbar-brand" href="/">
-                                 {user.displayName} <img src={login} alt="" width="30" height="25" />
-                            </a>
+                            {
+                                user.displayName ?  
+                                    <button onClick={logout} className='btn '>Logout</button> :
+                                    <a className="navbar-brand" href="/login">
+                                        {user.displayName} <img src={login} alt="" width="30" height="25" />
+                                    </a>
+                            }
                         </form>
                     </div>
                 </div>
