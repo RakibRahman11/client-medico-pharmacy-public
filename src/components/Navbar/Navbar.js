@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from '../../Images/logo.png'
 import login from '../../Images/login.png'
+import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
+    const {user } = useAuth()
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -22,9 +24,10 @@ const Navbar = () => {
                                 <a className="nav-link active" href="/">Contact</a>
                             </li>
                         </ul>
+                        <img src={user.photoURL} alt="" />
                         <form className="d-flex">
                             <a className="navbar-brand" href="/">
-                                <img src={login} alt="" width="30" height="25" />
+                                 {user.displayName} <img src={login} alt="" width="30" height="25" />
                             </a>
                         </form>
                     </div>

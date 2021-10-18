@@ -1,11 +1,12 @@
 import React from 'react';
 import firebaseInit from '../../Firebase/firebase.init';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 
 firebaseInit()
 
 const Login = () => {
-    const {user, googleLogin} = useFirebase()
+    const {googleLogin} = useAuth()
     return (
         <div>
             <h3 className="mt-5">Login to your account</h3>
