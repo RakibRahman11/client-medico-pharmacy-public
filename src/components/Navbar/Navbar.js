@@ -4,7 +4,7 @@ import login from '../../Images/login.png'
 import useAuth from '../../hooks/useAuth';
 
 const Navbar = () => {
-    const { user, logout } = useAuth()
+    const { user, logout, isLogin } = useAuth()
 
     return (
         <div>
@@ -27,6 +27,7 @@ const Navbar = () => {
                         </ul>
                         <img className='rounded-circle me-2' src={user.photoURL} alt="" />
                         {user.displayName}
+                        {isLogin.displayName}
                         <form className="d-flex">
                             {
                                 user.displayName ?  

@@ -11,8 +11,8 @@ const Equipments = () => {
     return (
         <div className='mt-5'>
             <h1 className='mb-3'>Services</h1>
-            <div class="container">
-                <div class="row">
+            <div className="container">
+                <div className="row">
                     {
                         equipments.map(equipment => <Equipment key={equipment.id} equipment={equipment}></Equipment>)
                     }
