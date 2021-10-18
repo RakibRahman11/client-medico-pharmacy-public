@@ -1,0 +1,11 @@
+.emg-card{
+    width: 50%;
+    margin: auto;
+    
+}
+.emg-img-top{
+    height: 160px;
+    width: 250px;
+    border: 1px solid red;
+    border-radius: 10px;
+}
