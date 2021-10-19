@@ -7,22 +7,22 @@ const Navbar = () => {
     const { user, logout, isLogin } = useAuth()
 
     return (
-        <div>
-            <nav className="navbar navbar-expand-lg navbar-light">
-                <div className="container">
-                    <a className="navbar-brand" href="/">
+        <div className=''>
+            <nav className="navbar navbar-expand-lg navbar-light ">
+                <div className="container w-100">
+                    <a className="navbar-brand" href="/home">
                         <img src={logo} alt="" width="70" height="60" />
                     </a>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="mb-2 navbar-nav me-auto mb-lg-0">
                             <li className="nav-item">
-                                <a className="nav-link active" href="/">Home</a>
+                                <a className="nav-link active" href="/home">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/">About</a>
+                                <a className="nav-link active" href="/about">About</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link active" href="/">Contact</a>
+                                <a className="nav-link active" href="/contact">Contact</a>
                             </li>
                         </ul>
                         <img className='rounded-circle me-2' src={user.photoURL} alt="" />
