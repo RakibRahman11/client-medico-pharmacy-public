@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory} from 'react-router-dom';
 import firebaseInit from '../../Firebase/firebase.init';
 import useAuth from '../../hooks/useAuth';
 
@@ -7,6 +7,15 @@ firebaseInit()
 
 const Login = () => {
     const {googleLogin, signInUsingEmail, handleEmail, handlePassword} = useAuth()
+    const location = useLocation();
+    const history = useHistory();
+    const redirect_ui = location.state?.from || '/home'
+    const handleGoogleSignin = () => {
+        googleLogin()
+            .then(result => {
+                history.push(redirect_ui);
+            })
+    }
     return (
         <div>
             <h3 className="mt-5">Login to your account</h3>
@@ -24,7 +33,7 @@ const Login = () => {
                 <Link className="text-decoration-none text-dark" to='/registration'>New user? Click me <i className="fas fa-mouse"></i></Link>
                 <br/>
                 <p className="my-5">-----------------------------------------</p>
-                <button onClick={googleLogin} type="button" className="bg-white btn btn-outline-dark text-dark"><i className="fab fa-google"></i> Sign in to Goggle</button>
+                <button onClick={handleGoogleSignin} type="button" className="bg-white btn btn-outline-dark text-dark"><i className="fab fa-google"></i> Sign in to Goggle</button>
             </div>
         </div>
     );

@@ -13,11 +13,7 @@ const useFirebase = () => {
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
   const googleLogin = () => {
-    signInWithPopup(auth, googleProvider)
-      .then(result => {
-        setUser(result.user);
-        console.log(result.user);
-      })
+    return signInWithPopup(auth, googleProvider)
   }
   const handleName = e => {
     setName(e.target.value);

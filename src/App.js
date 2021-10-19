@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Registration from './components/Registration/Registration';
 import SingleDetails from './components/SingleDetails/SingleDetails';
 import AuthProvider from './context/AuthProvider';
@@ -16,15 +17,18 @@ function App() {
           <Route exact path='/'>
             <Home></Home>
           </Route>
+          <Route exact path='/home'>
+            <Home></Home>
+          </Route>
           <Route exact path='/login'>
             <Login></Login>
           </Route>
           <Route exact path='/registration'>
             <Registration></Registration>
           </Route>
-          <Route exact path='/details/:id'>
+          <PrivateRoute path='/details/:id'>
             <SingleDetails></SingleDetails>
-          </Route>
+          </PrivateRoute>
           <Route path='*'>
             <Error></Error>
           </Route>
