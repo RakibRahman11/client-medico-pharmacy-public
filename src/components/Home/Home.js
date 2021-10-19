@@ -21,7 +21,7 @@ const Home = () => {
             </div>
             <Equipments></Equipments>
             <h1 className='my-5'>Governing Body</h1>
-            <div className="card mb-3 mx-5">
+            <div className="mx-5 mb-3 card">
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src={chairmen} className="img-fluid rounded-start" alt="..." />
