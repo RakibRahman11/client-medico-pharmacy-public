@@ -10,7 +10,6 @@ import Footer from '../Footer/Footer';
 const Home = () => {
     return (
         <div>
-            <Navbar></Navbar>
             <div className="mt-5 text-black border-0 card">
                 <img src={banner} className="mx-auto card-img w-75" alt="..." width="100" height="500" />
                 <div className="p-5 mx-auto text card-img-overlay text-start w-75">
@@ -48,7 +47,6 @@ const Home = () => {
                     <p class="card-text">10666 or +880 1914 001234</p>
                 </div>
             </div>
-            <Footer></Footer>
         </div>
     );
 };

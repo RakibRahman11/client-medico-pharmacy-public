@@ -3,8 +3,10 @@ import './App.css';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Error from './components/Error/Error';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
+import Navbar from './components/Navbar/Navbar';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Registration from './components/Registration/Registration';
 import SingleDetails from './components/SingleDetails/SingleDetails';
@@ -15,6 +17,7 @@ function App() {
     <div className="App">
       <AuthProvider>
       <Router>
+      <Navbar></Navbar>
         <Switch>
           <Route exact path='/'>
             <Home></Home>
@@ -41,6 +44,8 @@ function App() {
             <Error></Error>
           </Route>
         </Switch>
+        
+        <Footer></Footer>
       </Router>
       </AuthProvider>
     </div>
