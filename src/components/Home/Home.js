@@ -4,8 +4,6 @@ import Equipments from '../Equipments/Equipments';
 import chairmen from '../../Images/chairmen.jpg';
 import ambulance from '../../Images/ambulance.jpg';
 import './Home.css'
-import Navbar from '../Navbar/Navbar';
-import Footer from '../Footer/Footer';
 
 const Home = () => {
     return (
@@ -34,7 +32,7 @@ const Home = () => {
                             <p className="card-text">More than 27 years of clinical experience in the field of Dermatology Venereology and Sexual Medicine
                                 Obtained MBBS from Dhaka University in 1982
                                 Achieved DDV from IPGMR, Dhaka University in 1993
-                                Professor Chowdhury has 22 years of teaching experience in different medical colleges as registrar, Assistant Professor, Associate Professor and Professor. 8 years teaching experience at Dhaka Medical College for Undergraduate and Post Graduate students</p>
+                                Professor Chow. has 22 years of teaching experience in different medical colleges as registrar, Assistant Professor, Associate Professor and Professor. 8 years teaching experience at Dhaka Medical College for Undergraduate and Post Graduate students</p>
                         </div>
                     </div>
                 </div>

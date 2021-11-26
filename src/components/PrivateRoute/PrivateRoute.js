@@ -6,9 +6,9 @@ import useAuth from '../../hooks/useAuth';
 firebaseInit()
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const {user} = useAuth()
-    return (
-        <Route
+  const { user } = useAuth()
+  return (
+    <Route
       {...rest}
       render={({ location }) =>
         user.displayName ? (
@@ -23,7 +23,7 @@ const PrivateRoute = ({ children, ...rest }) => {
         )
       }
     />
-    );
+  );
 };
 
 export default PrivateRoute;

@@ -31,11 +31,11 @@ const Navbar = () => {
                         {isLogin.displayName}
                         <form className="d-flex">
                             {
-                                user.displayName ?  
+                                user.displayName ?
                                     <button onClick={logout} className='btn '>Logout</button> :
-                                    <a className="navbar-brand" to="/login">
+                                    <Link className="navbar-brand" to="/login">
                                         {user.displayName} <img src={login} alt="" width="30" height="25" />
-                                    </a>
+                                    </Link>
                             }
                         </form>
                     </div>
